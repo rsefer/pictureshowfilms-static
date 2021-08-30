@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Production Server -->
+  <title>Picture Show Films</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/731360/749444/css/fonts.css" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.17.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+  <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
+  <link rel="stylesheet" media="all" href="/assets/application-94ab64a546af8accd7b53b9dcb6f685aee89832598d2d05a626ad1a9aa725e58.css" />
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="46RI0N7OTVxLLEUJGUvf/gPIEs4lTOBKDnPV8/l0Eo9EMLZvcke9gbmI55fdHGm8K/mgRLNZf9SstqXdGUqVyg==" />
+</head>
+<body class="interior about">
+
+<div class="wrapper">
+
+	<nav>
+		<div class="center">
+		<div class="prompt"></div>
+		<ul class="links">
+			<li id="our-work">
+				<a href="/work">Our Work</a>
+			</li>
+			<li id="about-us">
+				<a href="/about">About Us</a>
+			</li>
+			<li id="contact">
+				<a href="/contact">Contact</a>
+			</li>
+			<li id="social">
+				<a href="http://www.twitter.com/pictureshowfilm" id="twitter">Twitter</a>
+				<a href="http://www.facebook.com/pictureshowfilms" id="facebook">Facebook</a>
+				<a href="http://www.instagram.com/pictureshowfilms" id="instagram">Instagram</a>
+			</li>
+		</ul>
+	</div>
+	</nav>
+
+<div id="main" >
+
+	
+<div class="about">
+<div class="main-promo">
+	<div class="center">
+		<h1>
+			<br/>
+			Picture Show excels at working in unscripted, documentary-style environments.  We seek to make small stories universal, and the larger-than-life stories deeply personal. 
+			<span class="yellow"></span>
+		</h1>
+
+	</div>
+	<div class="overlay dark"></div>
+	
+</div>	
+
+	<div class="team yellow ">
+		<ul class="center inner">
+					
+					
+	
+	
+					<li class="partners">
+					<div class="profile-copy">
+						<h3>Jamie Fleischel</h3>
+						<h4>Executive Producer | Director</h4>
+						<div class="profile-detail">
+							<p>Jamie decided he wanted to pursue a career in production after spending five weeks in a van, on tour with an American band in Europe. His only possessions the trip were a couple changes of clothes and a Hi-8 video camera that his parents had just given him for Christmas. To the chagrin of his traveling companions, Jamie shot several hours of footage on the trip. Upon returning home, he used that footage to begin the process of learning how to edit, becoming somewhat obsessed with making movies in the process.	</p>
+						</div>	
+					</div>
+					<div class="overlay">
+					</div>	
+					
+					<div class="profile-image" style="background:url(/uploads/employee/avatar/1/jamie_psf.jpg);background-position:center; background-size:cover;"></div>
+			</li>
+					
+					
+	
+	
+					<li class="partners">
+					<div class="profile-copy">
+						<h3>Matt Leonard</h3>
+						<h4>Executive Producer | Director</h4>
+						<div class="profile-detail">
+							<p>Matt Leonard began his creative trajectory at a young age when he submitted a video instead of a book report for Mrs. Lincoln’s eighth grade class. Despite dubiously casting himself as a ferocious boxer, the video earned him an “A”, which caused Matt to correctly predict that making these little movies would help him get out of writing papers for years to come. After graduating from Providence College, Matt taught acting classes, teaching newcomers how to be comfortable in front of an audience as well as a camera.	</p>
+						</div>	
+					</div>
+					<div class="overlay">
+					</div>	
+					
+					<div class="profile-image" style="background:url(/uploads/employee/avatar/2/matt_psf.jpg);background-position:center; background-size:cover;"></div>
+			</li>
+		</ul>
+		
+	</div>	
+</div>
+
+	<div class="related-title"><h3>Where We  WORK</h3></div>
+
+<div id="map">
+	<div class="map-copyright" style="position: absolute; z-index: 9; top:0px; background: none; padding: 2px 5px 2px 10px; color: rgba(68, 68, 68, 0.35);">
+		©<a href="https://www.mapbox.com/about/maps/" target="_blank" style="text-decoration:none; padding-left:4px; color:rgba(68, 68, 68, 0.35);">Mapbox</a><span style="margin-left:10px;">©<a href="http://www.openstreetmap.org/copyright" target="_blank" style="text-decoration:none;  padding-left:4px; color:rgba(68, 68, 68, 0.35);">OpenStreetMap</a></span>
+</div>
+
+
+	
+
+<script>
+
+	L.mapbox.accessToken = 'pk.eyJ1IjoiMTFodW5kcmVkIiwiYSI6IldOU3RZOGcifQ.MOCP-5xCs2_xRyX5Xx5u7A';
+	var map = L.mapbox.map('map', '11hundred.e829b79b', {zoomControl: false}) .setView([45, -25], 3);
+
+	featureLayer = L.mapbox.featureLayer()
+		.addTo(map);
+		map.dragging.disable();
+		map.touchZoom.disable();
+		map.doubleClickZoom.disable();
+		map.scrollWheelZoom.disable();
+		
+		var geoJson = [
+				{'type': 'Feature','geometry': {'type': 'Point','coordinates': [ 35.21371, 31.768319 ]},
+		    "properties": {"title": "Jerusalem","icon": { "iconUrl": "http://dev.11hundred.com/psf-mark.png", "iconSize": [50, 50], "iconAnchor": [25, 25], "popupAnchor": [0, -35], "className": "dot"}}
+		},
+				{'type': 'Feature','geometry': {'type': 'Point','coordinates': [ 32.5825197, 0.3475964 ]},
+		    "properties": {"title": "Kampala","icon": { "iconUrl": "http://dev.11hundred.com/psf-mark.png", "iconSize": [50, 50], "iconAnchor": [25, 25], "popupAnchor": [0, -35], "className": "dot"}}
+		},
+				{'type': 'Feature','geometry': {'type': 'Point','coordinates': [ -6.2603097, 53.3498053 ]},
+		    "properties": {"title": "Dublin","icon": { "iconUrl": "http://dev.11hundred.com/psf-mark.png", "iconSize": [50, 50], "iconAnchor": [25, 25], "popupAnchor": [0, -35], "className": "dot"}}
+		},
+				{'type': 'Feature','geometry': {'type': 'Point','coordinates': [ 12.4963655, 41.9027835 ]},
+		    "properties": {"title": "Rome","icon": { "iconUrl": "http://dev.11hundred.com/psf-mark.png", "iconSize": [50, 50], "iconAnchor": [25, 25], "popupAnchor": [0, -35], "className": "dot"}}
+		},
+				{'type': 'Feature','geometry': {'type': 'Point','coordinates': [ 2.3522219, 48.856614 ]},
+		    "properties": {"title": "Paris","icon": { "iconUrl": "http://dev.11hundred.com/psf-mark.png", "iconSize": [50, 50], "iconAnchor": [25, 25], "popupAnchor": [0, -35], "className": "dot"}}
+		},
+				{'type': 'Feature','geometry': {'type': 'Point','coordinates': [ -94.5785667, 39.0997265 ]},
+		    "properties": {"title": "Kansas City","icon": { "iconUrl": "http://dev.11hundred.com/psf-mark.png", "iconSize": [50, 50], "iconAnchor": [25, 25], "popupAnchor": [0, -35], "className": "dot"}}
+		},
+				{'type': 'Feature','geometry': {'type': 'Point','coordinates': [ 4.805528, 43.94931700000001 ]},
+		    "properties": {"title": "Avignon","icon": { "iconUrl": "http://dev.11hundred.com/psf-mark.png", "iconSize": [50, 50], "iconAnchor": [25, 25], "popupAnchor": [0, -35], "className": "dot"}}
+		},
+				{'type': 'Feature','geometry': {'type': 'Point','coordinates': [ -1.2577263, 51.7520209 ]},
+		    "properties": {"title": "Oxford","icon": { "iconUrl": "http://dev.11hundred.com/psf-mark.png", "iconSize": [50, 50], "iconAnchor": [25, 25], "popupAnchor": [0, -35], "className": "dot"}}
+		},
+				{'type': 'Feature','geometry': {'type': 'Point','coordinates': [ -86.158068, 39.768403 ]},
+		    "properties": {"title": "Indianapolis","icon": { "iconUrl": "http://dev.11hundred.com/psf-mark.png", "iconSize": [50, 50], "iconAnchor": [25, 25], "popupAnchor": [0, -35], "className": "dot"}}
+		},
+				{'type': 'Feature','geometry': {'type': 'Point','coordinates': [ 34.78176759999999, 32.0852999 ]},
+		    "properties": {"title": "Tel Aviv","icon": { "iconUrl": "http://dev.11hundred.com/psf-mark.png", "iconSize": [50, 50], "iconAnchor": [25, 25], "popupAnchor": [0, -35], "className": "dot"}}
+		},
+				{'type': 'Feature','geometry': {'type': 'Point','coordinates': [ -87.6297982, 41.8781136 ]},
+		    "properties": {"title": "Chicago","icon": { "iconUrl": "http://dev.11hundred.com/psf-mark.png", "iconSize": [50, 50], "iconAnchor": [25, 25], "popupAnchor": [0, -35], "className": "dot"}}
+		},
+				{'type': 'Feature','geometry': {'type': 'Point','coordinates': [ ,  ]},
+		    "properties": {"title": "Mexico City","icon": { "iconUrl": "http://dev.11hundred.com/psf-mark.png", "iconSize": [50, 50], "iconAnchor": [25, 25], "popupAnchor": [0, -35], "className": "dot"}}
+		},
+		];
+
+
+
+		
+		myLayer = L.mapbox.featureLayer().addTo(map);
+		myLayer.on('layeradd', function(e) {
+		    var marker = e.layer,
+		        feature = marker.feature;
+
+		    marker.setIcon(L.icon(feature.properties.icon));
+		});
+		myLayer.setGeoJSON(geoJson);
+
+		
+
+</script>
+
+
+
+
+
+</div>
+
+	
+	<div class="footer">
+
+
+		
+
+		
+
+			
+			
+			<div class="center inner">
+				<div class="half mark">
+			
+				</div>	
+				<div class="half">
+					<ul class="footer-links">
+						<li>
+							<a href="/work">Our Work</a>
+						</li>
+						<li>
+							<a href="/about">About Us</a>
+						</li>
+						<li>
+							<a href="/contact">Contact</a>
+						</li>
+						<li id="contact-info"><span id="address">3927 N. Central Park Ave., 2nd Floor,<br/>Chicago, Illinois 60618</span>
+							<span id="telephone">(312) 768 - 4294</span>
+						</li>
+
+					</ul>
+
+
+				</div>	
+				
+				
+				
+				<div class="full-width">
+				<div class="half">
+						Chicago based. Family owned. Globally experienced.
+				</div>	
+				<div class="half">
+					<a href="http://www.twitter.com/pictureshowfilm" id="twitter">Twitter</a>
+					<a href="http://www.facebook.com/pictureshowfilms" id="facebook">Facebook</a>
+					<a href="http://www.instagram.com/pictureshowfilms" id="instagram">Instagram</a>
+					
+				</div>	
+					
+			</div>
+		</div>
+
+
+</div>
+
+<script src="/assets/application-ee2eda84884b4100f9c83407ce59740aca9f19f2c7be178b189e339673d42f3f.js"></script>
+
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-15567535-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+
+</body>
+</html>

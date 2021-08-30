@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Production Server -->
+  <title>Picture Show Films</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/731360/749444/css/fonts.css" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.17.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+  <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
+  <link rel="stylesheet" media="all" href="/assets/application-94ab64a546af8accd7b53b9dcb6f685aee89832598d2d05a626ad1a9aa725e58.css" />
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="0aeRgzz8e3FMzINp/p5yNRiBGJCavmnn0PHbdOvLaypgzm4SxSZna6GbZlT60rv1Lw2OR2cvjNMoeRhsHZqnRw==" />
+</head>
+<body class="interior contact">
+
+<div class="wrapper">
+
+	<nav>
+		<div class="center">
+		<div class="prompt"></div>
+		<ul class="links">
+			<li id="our-work">
+				<a href="/work">Our Work</a>
+			</li>
+			<li id="about-us">
+				<a href="/about">About Us</a>
+			</li>
+			<li id="contact">
+				<a href="/contact">Contact</a>
+			</li>
+			<li id="social">
+				<a href="http://www.twitter.com/pictureshowfilm" id="twitter">Twitter</a>
+				<a href="http://www.facebook.com/pictureshowfilms" id="facebook">Facebook</a>
+				<a href="http://www.instagram.com/pictureshowfilms" id="instagram">Instagram</a>
+			</li>
+		</ul>
+	</div>
+	</nav>
+
+<div id="main" >
+
+	<div class="main-promo">
+	<div class="center">
+		<h1>
+			<h1>3927 N. Central Park Ave., 2nd Floor<br> Chicago, Illinois 60618<br> (312) 768 - 4294</br> <a href="mailto:jamie@pictureshowfilms.com">jamie@pictureshowfilms.com</a></h1>
+			
+		</h1>
+
+	</div>
+	<div class="overlay dark"></div>
+			<div class="map-copyright" style="position: absolute; z-index: 9; top:0px; background: #222; padding: 2px 5px 2px 10px; color: #444;">
+				©<a href="https://www.mapbox.com/about/maps/" target="_blank" style="text-decoration:none; padding-left:4px; color:#444;">Mapbox</a><span style="margin-left:10px;">©<a href="http://www.openstreetmap.org/copyright" target="_blank" style="text-decoration:none;  padding-left:4px; color:#444;">OpenStreetMap</a></span>
+			</div>			
+		<div id="map">
+		</div>
+</div>
+
+
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiMTFodW5kcmVkIiwiYSI6IldOU3RZOGcifQ.MOCP-5xCs2_xRyX5Xx5u7A';
+  var map = new mapboxgl.Map({
+    container: 'map',
+  attributionControl: false,  
+  center: [ -87.644348, 41.876590],
+  zoom: 15,
+    style: 'mapbox://styles/11hundred/cingeek5s000oafm7fesw4hwb'
+	
+  });
+  
+  
+  // disable map zoom when using scroll
+  map.scrollZoom.disable();
+  map.dragPan.disable();
+  map.dragRotate.disable();
+  map.boxZoom.disable();
+  map.doubleClickZoom.disable();
+
+  </script>
+  
+</script>
+
+</div>
+
+	
+	<div class="footer">
+
+
+		
+
+		
+
+			
+			
+			<div class="center inner">
+				<div class="half mark">
+			
+				</div>	
+				<div class="half">
+					<ul class="footer-links">
+						<li>
+							<a href="/work">Our Work</a>
+						</li>
+						<li>
+							<a href="/about">About Us</a>
+						</li>
+						<li>
+							<a href="/contact">Contact</a>
+						</li>
+						<li id="contact-info"><span id="address">3927 N. Central Park Ave., 2nd Floor,<br/>Chicago, Illinois 60618</span>
+							<span id="telephone">(312) 768 - 4294</span>
+						</li>
+
+					</ul>
+
+
+				</div>	
+				
+				
+				
+				<div class="full-width">
+				<div class="half">
+						Chicago based. Family owned. Globally experienced.
+				</div>	
+				<div class="half">
+					<a href="http://www.twitter.com/pictureshowfilm" id="twitter">Twitter</a>
+					<a href="http://www.facebook.com/pictureshowfilms" id="facebook">Facebook</a>
+					<a href="http://www.instagram.com/pictureshowfilms" id="instagram">Instagram</a>
+					
+				</div>	
+					
+			</div>
+		</div>
+
+
+</div>
+
+<script src="/assets/application-ee2eda84884b4100f9c83407ce59740aca9f19f2c7be178b189e339673d42f3f.js"></script>
+
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-15567535-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+
+</body>
+</html>

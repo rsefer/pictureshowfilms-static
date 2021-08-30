@@ -1,0 +1,2655 @@
+/*
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+* or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any styles
+* defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+* file per style scope.
+*
+
+
+*/
+/*
+[...]
+
+[...]
+*/
+/* line 25, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  font-family: 'Verlag A', 'Verlag B';
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* line 32, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 36, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+body.home {
+  background: #222;
+}
+
+/* line 39, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+body.home.yellow {
+  background: #e2da86 !important;
+}
+
+/* line 42, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+body.extras #main {
+  background: #222;
+  float: left;
+}
+
+/* line 47, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+/* line 52, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+h1 {
+  font-family: 'Ziggurat A', 'Ziggurat B';
+  font-weight: 800;
+  font-style: normal;
+  font-size: 3em;
+}
+
+/* line 55, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+h2 {
+  font-family: 'Verlag A', 'Verlag B';
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+/* line 60, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+h3 {
+  font-family: 'Ziggurat A', 'Ziggurat B';
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1.35em;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+}
+
+/* line 66, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+h4 {
+  font-family: 'Verlag A', 'Verlag B';
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.35em;
+}
+
+/* line 70, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+h6 {
+  font-family: 'Verlag A', 'Verlag B';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+}
+
+/* line 76, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+p {
+  font-weight: 700;
+  font-size: 1.65em;
+}
+
+/* line 82, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+#main {
+  display: block;
+  width: 100%;
+}
+
+/* line 86, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.interior #main {
+  margin-top: 75px;
+}
+
+/* line 91, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul,
+ul li {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 96, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul li {
+  list-style: none;
+}
+
+/* line 100, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.header {
+  width: 100%;
+  margin: 0;
+  padding: 250px 0 0px;
+}
+
+/* line 105, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.header.home {
+  padding-top: 325px;
+}
+
+/* line 108, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.content.full {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 600px;
+  position: relative;
+  height: auto;
+  display: block;
+}
+
+/* line 123, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.footer {
+  position: relative;
+  width: 100%;
+  float: left;
+  background: #222;
+}
+
+/* line 129, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.center {
+  width: auto;
+  padding: 0 22px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 135, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.center.inner {
+  width: 50%;
+  min-width: 900px;
+  margin: 0 auto;
+}
+
+/* line 141, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.overlay {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  background: rgba(17, 17, 17, 0.75);
+}
+
+/* line 150, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.home .overlay {
+  background: rgba(17, 17, 17, 0.95);
+  z-index: 2;
+}
+
+/* line 154, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.section {
+  position: relative;
+}
+
+/*
+Colors
+***/
+/* line 163, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.grey {
+  background: #111;
+}
+
+/* line 166, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.white {
+  background: #fff !important;
+}
+
+/* line 169, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.orange {
+  background-color: #ee8410 !important;
+}
+
+/* line 172, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.orange.light {
+  background: rgba(238, 132, 16, 0.8) !important;
+}
+
+/* line 175, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.yellow {
+  background: #e2da86 !important;
+}
+
+/* line 178, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.yellow.light {
+  background: #F3F1E1 !important;
+  background: #eae4a7 !important;
+}
+
+/* line 182, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.transparent {
+  background: rgba(226, 218, 134, 0) !important;
+  z-index: 1;
+}
+
+/* line 188, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.half {
+  position: relative;
+  width: 50%;
+  float: left;
+}
+
+/*
+Navigation
+***/
+/* line 200, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.nav-wrapper {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  padding: 40px;
+  box-sizing: border-box;
+  position: relative;
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+/* line 212, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+nav {
+  position: absolute;
+  z-index: 9;
+  height: 75px;
+  overflow: hidden;
+  top: 0px;
+}
+
+/* line 220, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+nav .center {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0px;
+}
+
+/* line 228, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.home nav {
+  position: absolute;
+  width: 450px;
+  top: 270px;
+  height: 250px;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  background: #fff;
+}
+
+/* line 240, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+nav.fixed-header {
+  position: fixed;
+  height: 75px;
+  top: 0px;
+  background: none;
+}
+
+/* line 246, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.home .logo {
+  background: #fff;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  left: 0px;
+  top: 20px;
+  background-size: 175px;
+  background-image: url(/assets/ps-mark-7ecad9c0dd3b5ee8653dd57acffe3c33.png);
+  background-repeat: no-repeat;
+  background-position: center 20px;
+  -webkit-transition: background-position-y .75s;
+  -moz-transition: background-position-y .75s;
+  -o-transition: background-position-y .75s;
+  transition: background-position-y .75s;
+}
+
+/* line 265, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.statement {
+  width: 100%;
+  height: 40px;
+  top: 10px;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* line 273, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.statement h2 {
+  position: absolute;
+  padding: 10px 25px;
+  height: 25px;
+  line-height: 1.8em;
+}
+
+/* line 283, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+nav.fixed-header .logo {
+  display: none;
+}
+
+/* line 288, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.links {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  margin-left: 5%;
+  top: 0px;
+}
+
+/* line 297, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.home nav.visible {
+  visibility: visible;
+  opacity: 1;
+  top: 250px;
+  -webkit-transition: opacity .5s;
+  -moz-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+/* line 307, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.home nav.visible .logo {
+  top: 0px;
+  -webkit-transition: top .5s;
+  -moz-transition: top .5s;
+  -o-transition: top .5s;
+  transition: top .5s;
+}
+
+/* line 315, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.links li {
+  float: left;
+  position: relative;
+  margin-right: 10px;
+}
+
+/* line 321, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.links li a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #111;
+}
+
+/* line 327, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.home .links {
+  display: block;
+  width: 90%;
+  height: 50px;
+}
+
+/* line 332, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.interior nav .links,
+.interior nav:hover .links,
+nav.fixed-header .links,
+nav.fixed-header:hover .links {
+  padding-top: 25px;
+  top: 0px;
+  width: 50%;
+  height: auto;
+  border: none;
+  float: right;
+  left: auto;
+  position: relative;
+}
+
+/* line 347, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.interior nav .links,
+nav.fixed-header .links {
+  width: auto;
+  width: 50%;
+  height: auto;
+  border: none;
+}
+
+/* line 354, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.interior nav,
+nav.fixed-header {
+  width: 100%;
+  background: #fff;
+}
+
+/* line 360, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.links li#social {
+  float: right;
+  margin-top: -5px;
+}
+
+/* line 364, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.links li#social a {
+  text-indent: -9999em;
+  float: left;
+  width: 20px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+/* line 371, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.links li#social a#twitter {
+  background-size: 20px;
+  background-image: url(/assets/twitter-icon-721ba4c47a12affb233583b747c76762.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.25;
+}
+
+/* line 378, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.links li#social a#instagram {
+  background-size: 20px;
+  background-image: url(/assets/instagram-icon-dedf5abd6d96409cdaeb24f26cb35c72.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.25;
+}
+
+/* line 385, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.links li#social a#facebook {
+  background-size: 20px;
+  background-image: url(/assets/fb-icon-7c6942ca533eab4d6b90562f1a4bb536.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.25;
+}
+
+/* line 392, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.links li#social a#instagram:hover,
+.links li#social a#twitter:hover,
+.links li#social a#facebook:hover {
+  opacity: 1;
+}
+
+/* line 399, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.interior nav:hover .links,
+nav.fixed-header:hover .links {
+  display: block;
+}
+
+/* line 403, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.interior nav .links a,
+nav.fixed-header .links a {
+  color: #111;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 411, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.interior nav:hover .links a,
+nav.fixed-header:hover .links a {
+  display: block;
+}
+
+/* line 419, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.prompt {
+  position: absolute;
+  left: -81px;
+  top: 0px;
+  width: 81px;
+  height: 75px;
+  background-size: 80px;
+  background-image: url(/assets/ps-horn-8ee67c1adbc0d0547c53c60d622e790b.png);
+  background-repeat: no-repeat;
+  background-position: -10px 15px;
+  -webkit-transition: left .75s;
+  -moz-transition: left .75s;
+  -o-transition: left .75s;
+  transition: left .75s;
+}
+
+/* line 434, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.interior nav .prompt,
+nav.fixed-header .prompt {
+  left: 0px;
+  -webkit-transition: left .75s;
+  -moz-transition: left .75s;
+  -o-transition: left .75s;
+  transition: left .75s;
+}
+
+/* line 451, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.poster {
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  min-height: 750px;
+  position: relative;
+  background-repeat: repeat;
+  background-position: 0 0;
+}
+
+/* line 462, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.featured .media img,
+.poster img {
+  width: 1px;
+  height: 1px;
+  left: -9999px;
+  top: -999px;
+  position: absolute;
+  display: none;
+}
+
+/*
+Videos
+**/
+/* line 479, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.main-promo {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0px auto;
+  min-height: 600px;
+}
+
+/* line 489, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.main-promo .center {
+  max-width: 900px;
+  height: 50px;
+}
+
+/* line 493, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.featured-slider {
+  height: 100%;
+  width: 100%;
+  display: none;
+  opacity: 0;
+}
+
+/* line 499, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.featured-slider > div {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 510, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.main-promo .header {
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 0px;
+  bottom: 0px;
+  position: absolute;
+  z-index: 9;
+  padding: 0px;
+}
+
+/* line 519, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.main-promo#home.visible #slide-1 .header {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* line 523, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.main-promo .header h2 {
+  font-size: 1.3em;
+  color: #fff;
+}
+
+/* line 527, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.main-promo .header h2 span {
+  font-size: .8em;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.35);
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 4px 10px 2px 10px;
+  margin-right: 10px;
+  font-family: 'Ziggurat A', 'Ziggurat B';
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* line 537, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.main-promo .header h2 a {
+  font-family: 'Verlag A', 'Verlag B';
+  font-weight: 200;
+  font-style: normal;
+  color: #fff;
+}
+
+/* line 542, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.main-promo .overlay {
+  opacity: .5;
+}
+
+/* line 545, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+#watch.main-promo .header,
+.main-promo .viewing .header {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 10px;
+  -webkit-transition: all .75s;
+  -moz-transition: all .75s;
+  -o-transition: all .75s;
+  transition: all .75s;
+}
+
+/* line 555, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+#watch.main-promo .header.tall {
+  height: 110px;
+}
+
+/* line 558, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.main-promo .viewing .header p {
+  color: #e2da86 !important;
+}
+
+/* line 562, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.featured-slider #slide-1 img {
+  width: 0px;
+  height: 0px;
+  left: -999999px;
+}
+
+/* line 567, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.featured-slider .slides#slide-1 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 572, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.featured-slider .slides#slide-2 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+/* line 578, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.featured-slider .slides#slide-3 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+/* line 584, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.featured-slider .slides#slide-4 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+/* line 590, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.slide {
+  position: relative;
+}
+
+/* line 593, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.slide-detail {
+  position: relative;
+  margin-top: 50%;
+}
+
+/* line 597, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.featured .inner {
+  display: none;
+}
+
+/* line 601, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.featured-slider .media {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+
+/* line 612, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+#home {
+  position: relative;
+  z-index: 0;
+}
+
+/* line 616, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+#home ul li {
+  width: 100%;
+  float: left;
+  position: relative;
+  z-index: 0;
+}
+
+/* line 622, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+#home.visible .featured .media {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all .75s;
+  -moz-transition: all .75s;
+  -o-transition: all .75s;
+  transition: all .75s;
+}
+
+/* line 631, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.featured-slider .art-poster {
+  background-size: cover;
+  -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  -o-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  -webkit-filter: grayscale(1);
+}
+
+/* line 641, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.fixed-wrapper {
+  position: fixed;
+  height: 500px;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+/* line 649, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.feature-slide {
+  width: 100%;
+  position: relative;
+  margin-bottom: 0px;
+  background: #fff;
+  float: left;
+  height: 200px;
+}
+
+/* line 657, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.feature-slide#dark {
+  background: #111;
+}
+
+/* line 660, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list {
+  min-height: 100%;
+  float: left;
+  width: 100%;
+}
+
+/* line 666, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.feature-slide .art-poster {
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*    -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -o-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(100%);
+  filter: gray;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  */
+}
+
+/* line 675, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.feature-slide .overlay {
+  opacity: 1;
+  background: rgba(243, 241, 225, 0.18);
+  background: rgba(226, 218, 134, 0.85);
+  visibility: visible;
+  z-index: 1;
+}
+
+/* line 683, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li {
+  width: 50%;
+  height: 150px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 690, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li.feat_tag {
+  height: 300px;
+}
+
+/* line 693, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li.all_work {
+  background: #000;
+}
+
+/* line 696, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li.all_work h3 {
+  text-align: center;
+  color: #333;
+  line-height: 13em;
+}
+
+/* line 701, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li.all_work:hover {
+  background: #222;
+  cursor: pointer;
+}
+
+/* line 706, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li.all_work:hover h3 {
+  color: #e2da86;
+}
+
+/* line 711, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li a {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+
+/* line 719, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li:hover {
+  cursor: pointer;
+}
+
+/* line 722, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li .overlay {
+  background: rgba(226, 218, 134, 0.05);
+  background: rgba(0, 0, 0, 0.75);
+  visibility: visible;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+/* line 729, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li.feat_tag .overlay {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* line 732, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li .white {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  background: rgba(17, 17, 17, 0.75);
+  opacity: 1;
+  background: rgba(238, 132, 16, 0.8);
+  visibility: visible;
+  z-index: 0;
+  background: white;
+}
+
+/* line 746, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li:hover .overlay {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.8);
+  background: rgba(243, 241, 225, 0.8);
+  background: rgba(226, 218, 134, 0.8);
+  -webkit-transition: background .75s;
+  -moz-transition: background .75s;
+  -o-transition: background .75s;
+  transition: background .75s;
+}
+
+/* line 756, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li.feat_tag:hover .overlay {
+  border: 10px solid rgba(226, 218, 134, 0.1);
+}
+
+/* line 760, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li .title {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  top: 30px;
+  z-index: 3;
+}
+
+/* line 767, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li.even .title {
+  left: 0px;
+}
+
+/* line 770, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li.en
+.title {
+  right: 0px;
+}
+
+/* line 774, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li .title h3 {
+  z-index: 3;
+  top: 0px;
+  color: #fff;
+  left: 20px;
+  opacity: 0;
+  max-width: 300px;
+  visibility: hidden;
+  position: absolute;
+}
+
+/* line 784, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li:hover .title {
+  top: 20px;
+  -webkit-transition: all .75s;
+  -moz-transition: all .75s;
+  -o-transition: all .75s;
+  transition: all .75s;
+}
+
+/* line 791, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li:hover .title h3 {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity .5s;
+  -moz-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+/* line 799, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li.spacer-mobile,
+.videos-list li.spacer-desktop {
+  display: none;
+}
+
+/* line 803, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li.spacer-desktop {
+  display: block;
+  background: #fff;
+}
+
+/* line 807, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.art-poster {
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* line 816, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li .art-poster {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* line 820, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li .art-poster.flipped {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity .75s;
+  -moz-transition: opacity .75s;
+  -o-transition: opacity .75s;
+  transition: opacity .75s;
+}
+
+/* line 828, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.poster .art-poster {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* line 832, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.poster.visible .overlay {
+  background: rgba(17, 17, 17, 0.75);
+}
+
+/* line 836, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.poster.visible .art-poster {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 1.5s;
+  -moz-transition: opacity 1.5s;
+  -o-transition: opacity 1.5s;
+  transition: opacity 1.5s;
+}
+
+/* line 845, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+#watch .art-poster {
+  background-size: cover;
+  -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  -o-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  -webkit-filter: grayscale(1);
+}
+
+/* line 854, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+#watch .overlay {
+  opacity: 1;
+  background: rgba(243, 241, 225, 0.8);
+  background: rgba(226, 218, 134, 0.85);
+  visibility: visible;
+  z-index: 1;
+  -webkit-transition: all .575s;
+  -moz-transition: all .575s;
+  -o-transition: all .575s;
+  transition: all .575s;
+}
+
+/* line 865, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.video-overlay {
+  z-index: 9;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 874, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li .art-poster {
+  -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  -o-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  filter: gray;
+  -webkit-filter: grayscale(70%);
+  -webkit-filter: grayscale(0.7);
+}
+
+/* line 882, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li.feat_tag .art-poster {
+  -webkit-filter: grayscale(0%);
+}
+
+/* line 886, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.videos-list li:hover .art-poster {
+  -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  -o-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  -webkit-filter: grayscale(1);
+}
+
+/* line 896, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.video {
+  z-index: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1122px;
+  height: 588px;
+  margin-left: -561px;
+  margin-top: -300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1123px;
+  -webkit-transition: all .575s;
+  -moz-transition: all .575s;
+  -o-transition: all .575s;
+  transition: all .575s;
+}
+
+/* line 914, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+#watch iframe,
+.full iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* line 921, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+#watch iframe {
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  visibility: hidden;
+}
+
+/* line 928, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.watching .video {
+  opacity: 1;
+  box-shadow: 2px 2px 32px rgba(0, 0, 0, 0.5);
+  z-index: 9;
+}
+
+/* line 934, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.watching #watch iframe {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+/* line 942, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.watching #watch .overlay {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* line 945, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.watching #watch {
+  height: 100vh !important;
+  -webkit-transition: all .575s;
+  -moz-transition: all .575s;
+  -o-transition: all .575s;
+  transition: all .575s;
+}
+
+/* line 952, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.watching .watch-video {
+  display: none;
+}
+
+/* line 955, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.close {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9;
+  bottom: -75px;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  font-family: 'Ziggurat A', 'Ziggurat B';
+  font-weight: 800;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 0;
+  box-sizing: border-box;
+  -webkit-transition: all .15s;
+  -moz-transition: all .15s;
+  -o-transition: all .15s;
+  transition: all .15s;
+}
+
+/* line 974, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.close.yellow:hover {
+  background: #fff !important;
+  cursor: pointer;
+}
+
+/* line 979, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.watching .close {
+  position: absolute;
+  visibility: visible;
+  opacity: 1;
+  bottom: 0px;
+  -webkit-transition: all .575s;
+  -moz-transition: all .575s;
+  -o-transition: all .575s;
+  transition: all .575s;
+}
+
+/* line 991, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.inline-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 58%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* line 1000, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.promo {
+  float: left;
+  position: relative;
+  width: 100%;
+}
+
+/* line 1005, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.promo ul {
+  float: left;
+  position: relative;
+}
+
+/* line 1009, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.promo a {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  z-index: 9;
+  text-indent: -999em;
+}
+
+/* line 1018, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.promo h3 {
+  z-index: 10;
+  width: 250px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -125px;
+  margin-top: -50px;
+  text-align: center;
+  height: 100px;
+  border: 4px solid #111;
+  background: #fff;
+}
+
+/*
+Watch
+***/
+/* line 1037, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+#watch img {
+  display: none;
+  width: 1px;
+  height: 1px;
+  left: -100px;
+  top: -100px;
+  position: absolute;
+}
+
+/* line 1045, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.watching #watch .center {
+  display: none;
+}
+
+/* line 1048, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+#watch .center h4 {
+  font-size: 1.75em;
+  color: #111;
+  padding-bottom: 25px;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+/* line 1055, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+#watch .center a.info {
+  color: rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  float: left;
+  width: 100%;
+}
+
+/* line 1064, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+#watch .center a.info:hover {
+  color: white;
+}
+
+/* line 1067, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.watch-video {
+  width: 200px;
+  height: 200px;
+  background: #111;
+  border-radius: 50%;
+  z-index: 2;
+  text-align: left;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -150px;
+  margin-left: -100px;
+  box-sizing: border-box;
+}
+
+/* line 1081, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.watch-video:hover {
+  background: #fff;
+  cursor: pointer;
+}
+
+/* line 1086, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.watch-video h3 {
+  position: relative;
+  z-index: 9;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  width: 120px;
+  text-align: center;
+  padding-bottom: 3px;
+  margin-top: 3px;
+  height: 15px;
+  line-height: 14px;
+  color: #111;
+  font-family: 'Ziggurat A', 'Ziggurat B';
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* line 1102, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.watch-video .play h3 {
+  border-bottom: 2px solid #111;
+}
+
+/* line 1105, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+span.buttonarea {
+  font-family: 'Ziggurat A', 'Ziggurat B';
+  font-weight: 800;
+  font-style: normal;
+  position: absolute;
+  height: 25px;
+  top: 47%;
+  background: transparent;
+  width: 100%;
+  left: 0px;
+  z-index: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+  color: #e2da86;
+}
+
+/* line 1119, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.watch-video:hover {
+  cursor: pointer;
+}
+
+/* line 1122, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.watch-video:hover span.buttonarea {
+  color: #111;
+}
+
+/* line 1126, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.half:hover span.buttonarea {
+  display: block;
+  color: #e2da86;
+  background: black;
+  -webkit-transition: background 1.5s;
+  -moz-transition: background 1.5s;
+  -o-transition: background 1.5s;
+  transition: background 1.5s;
+}
+
+/* line 1136, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.watching .content#watch {
+  background: #333 !important;
+  -webkit-transition: background 1.5s;
+  -moz-transition: background 1.5s;
+  -o-transition: background 1.5s;
+  transition: background 1.5s;
+}
+
+/* line 1144, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+#description {
+  display: block;
+  width: 100%;
+  display: inline-block;
+  padding-top: 75px;
+}
+
+/* line 1150, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+#description p {
+  line-height: 1.45em;
+  padding-right: 0px;
+  margin: 0 auto;
+  font-weight: 200;
+  -webkit-transition: all .575s;
+  -moz-transition: all .575s;
+  -o-transition: all .575s;
+  transition: all .575s;
+}
+
+/* line 1161, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+#description p {
+  color: #eee;
+  margin: 0 auto 75px;
+}
+
+/* line 1165, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+#description h3.scroll,
+#description p.scroll {
+  color: #333;
+  -webkit-transition: all .975s;
+  -moz-transition: all .975s;
+  -o-transition: all .975s;
+  transition: all .975s;
+  color: #333;
+  -webkit-transition: all .975s;
+  -moz-transition: all .975s;
+  -o-transition: all .975s;
+  transition: all .975s;
+}
+
+/* line 1179, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.breaker {
+  width: 100%;
+  margin-top: 100px;
+  padding: 25px 0;
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #111;
+}
+
+/* line 1186, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.breaker h3 {
+  width: 100%;
+  text-align: center;
+  color: #999;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2) !important;
+  width: 170px;
+  text-align: center;
+  padding-bottom: 3px;
+  margin: 3px auto;
+  height: 15px;
+  line-height: 14px;
+  font-family: 'Ziggurat A', 'Ziggurat B';
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* line 1206, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.center.inner.header {
+  padding: 250px 0 0px;
+  z-index: 9;
+}
+
+/* line 1210, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.header h1 {
+  color: #111;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 1.2em;
+  padding-bottom: 15px;
+}
+
+/* line 1218, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.header h1 span {
+  border-bottom: 2px solid #fff;
+}
+
+/* line 1221, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.header p {
+  text-align: center;
+  font-family: 'Ziggurat A', 'Ziggurat B';
+  font-weight: 800;
+  font-style: normal;
+  font-size: 3em;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 200;
+  line-height: 1.05em;
+  margin: 0;
+}
+
+/* line 1230, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.related-title {
+  text-align: center;
+  padding: 20px 0;
+  float: left;
+  width: 100%;
+}
+
+/* line 1237, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.related-title h3 {
+  font-family: 'Verlag A', 'Verlag B';
+  font-weight: 200;
+  font-style: normal;
+}
+
+/*
+About
+***/
+/* line 1243, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.about {
+  width: 100%;
+  float: left;
+}
+
+/* line 1247, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.about .main-promo {
+  background-image: url(/assets/about-story-f9cd4b4ce2bb3822a92e565644653906.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 1254, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.about .main-promo .center {
+  z-index: 9;
+}
+
+/* line 1257, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.about .main-promo .center h1 {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* line 1260, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.about .main-promo .center h1 .yellow {
+  background: none !important;
+  color: #e2da86;
+}
+
+/* line 1264, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.about .main-promo .overlay {
+  opacity: 1;
+  background: rgba(17, 17, 17, 0.8);
+}
+
+/* line 1268, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.about p span {
+  color: #fff;
+  color: black;
+  font-weight: 800;
+  float: left;
+  width: 100%;
+  margin: 30px 0 0;
+}
+
+/* line 1279, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.social,
+.team {
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 0px;
+  float: left;
+  padding: 125px 0;
+}
+
+/* line 1289, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.team ul li {
+  width: 50%;
+  padding-top: 25px;
+  float: left;
+  position: relative;
+  height: 500px;
+}
+
+/* line 1296, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.team ul li.employees {
+  width: 100%;
+  height: 90px;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+/* line 1305, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.profile-copy,
+.profile-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0px;
+  z-index: 0;
+}
+
+/* line 1314, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.profile-copy {
+  z-index: 2;
+  width: 90%;
+  top: 50px;
+  left: 5%;
+}
+
+/* line 1320, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.team ul li.employees .profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* line 1326, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.team ul li.employees .profile-copy {
+  height: 60px;
+  left: 125px;
+  top: 40px;
+}
+
+/* line 1333, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.team .overlay {
+  background: rgba(255, 255, 255, 0.9);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* line 1339, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.profile-copy p {
+  display: none;
+  font-size: 1.25em;
+  padding-top: 25px;
+  padding-right: 75px;
+  line-height: 1.2em;
+}
+
+/* line 1346, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.team ul li:hover .profile-copy p {
+  display: block;
+}
+
+/* line 1349, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.team ul li:hover {
+  cursor: pointer;
+}
+
+/* line 1353, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.team ul li:hover .overlay {
+  visibility: visible;
+  opacity: 0.9;
+  -webkit-transition: all .575s;
+  -moz-transition: all .575s;
+  -o-transition: all .575s;
+  transition: all .575s;
+}
+
+/*
+Contact Us
+***/
+/* line 1370, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.contact .main-promo .center {
+  z-index: 9;
+}
+
+/* line 1373, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.contact .main-promo .center h1 {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* line 1376, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.contact .main-promo .center h1 a {
+  text-decoration: none;
+  background: none !important;
+  color: #e2da86;
+}
+
+/* line 1381, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.contact .main-promo .overlay {
+  opacity: 1;
+  background: rgba(17, 17, 17, 0.8);
+}
+
+/* line 1385, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.contact-box {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  float: right;
+  background: #fff;
+  z-index: 999;
+  margin-top: 150px;
+  padding: 30px 20px;
+  left: 50%;
+  margin-left: -170px;
+  top: 50%;
+  margin-top: -150px;
+}
+
+/* line 1399, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.contact-box::after {
+  content: '';
+  position: absolute;
+  left: 42%;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #e2da86;
+  clear: both;
+}
+
+/* line 1411, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.contact-box p {
+  text-align: center;
+  margin: 0;
+}
+
+/*
+Footer
+***/
+/* Footer */
+/* line 1420, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+#main .extras {
+  padding: 50px 0;
+  float: left;
+  width: 100%;
+}
+
+/* line 1425, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul.social-update {
+  margin: 0 20px;
+}
+
+/* line 1428, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul.social-update li {
+  position: relative;
+  width: 50%;
+  float: left;
+}
+
+/* line 1433, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul.social-update li {
+  width: 50%;
+  height: 450px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  background: #e2da86;
+}
+
+/* line 1444, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.image-wrapper {
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 100%;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 1454, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.image-wrapper img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+/* line 1460, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.social-detail {
+  background: #fff;
+}
+
+/* line 1463, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul.social-update li h6 {
+  padding: 10px 0;
+}
+
+/* line 1466, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul.social-update li h4 {
+  color: #111;
+  font-family: 'Ziggurat A', 'Ziggurat B';
+  font-weight: 800;
+  font-style: normal;
+  font-size: 3em;
+  font-size: 1.35em;
+  padding-right: 35px;
+  padding-bottom: 35px;
+}
+
+/* line 1473, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.social-detail a {
+  color: #fff;
+}
+
+/* line 1478, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul.social-update li.social {
+  text-align: center;
+  height: auto;
+  width: 100%;
+  border-top: 1px solid #444;
+  padding-top: 40px;
+  margin-top: 20px;
+}
+
+/* line 1486, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul.social-update li.social a {
+  float: none;
+  text-indent: -999999em;
+  background: #ee8410;
+  width: 75px;
+  height: 75px;
+}
+
+/* line 1493, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul.social-update li.social h3 {
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 0 20px 0;
+}
+
+/* line 1498, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.social-copy {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: #111;
+  width: 100%;
+}
+
+/* line 1505, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.social-detail h6,
+.social-detail h6 a {
+  color: #fff;
+}
+
+/* line 1509, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.social-detail {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background: rgba(226, 218, 134, 0.7);
+}
+
+/* line 1519, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul.social-update li:hover {
+  cursor: pointer;
+}
+
+/* line 1522, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul.social-update li .image-wrapper {
+  -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  -o-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  -webkit-filter: grayscale(1);
+}
+
+/* line 1531, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul.social-update li:hover .social-detail {
+  display: block;
+  background: rgba(226, 218, 134, 0.7);
+}
+
+/* line 1535, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul.social-update li.video-social {
+  height: 100%;
+}
+
+/* line 1539, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.footer h2 {
+  text-align: center;
+  color: #fff;
+  padding: 50px 0 25px 0;
+  margin-bottom: 25px;
+}
+
+/* line 1546, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.info {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+/* line 1551, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.header .info {
+  padding-bottom: 50px;
+}
+
+/* line 1554, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.info p {
+  background: #222;
+  padding: 15px 0;
+  color: #999;
+  text-indent: 10px;
+  font-size: 12px;
+}
+
+/* line 1562, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.map {
+  background: #e2da86;
+  width: 100%;
+  display: inline-block;
+  height: 400px;
+  margin-top: 20px;
+}
+
+/* line 1570, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.tags {
+  position: relative;
+  background: #111;
+  width: 100%;
+  padding: 20px 0;
+  height: 130px;
+  z-index: 0;
+}
+
+/* line 1578, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul.more-work {
+  background: rgba(243, 241, 225, 0.8);
+  width: 100%;
+  border-top: 1px solid #ddd;
+  float: left;
+  margin-top: 20px;
+  padding: 0px 0px 50px 0px;
+}
+
+/* line 1586, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul.more-work li {
+  float: left;
+  width: auto;
+  margin-right: 10px;
+  width: 100%;
+  height: 400px;
+  float: left;
+}
+
+/* line 1594, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul.more-work a {
+  width: 100%;
+  color: #fff;
+  float: left;
+  text-transform: none;
+  text-decoration: none;
+}
+
+/* line 1601, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul.more-work h3 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* line 1605, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul.more-work p {
+  font-size: 1.35em;
+}
+
+/* line 1608, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.tag-detail {
+  height: 100%;
+  position: relative;
+}
+
+/* line 1612, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.tag-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+/* line 1620, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.tag-title {
+  padding-top: 100px;
+}
+
+/* line 1623, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.tag-title h2 {
+  text-align: center;
+  max-width: 300px;
+  color: #111;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  padding: 30px 50px;
+  margin: 0 auto;
+}
+
+/* line 1631, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.tag-detail .overlay {
+  z-index: 2;
+}
+
+/* line 1634, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.tag-detail:hover {
+  cursor: pointer;
+}
+
+/* line 1637, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.tag-detail:hover .overlay {
+  opacity: 1;
+  background: rgba(226, 218, 134, 0.8);
+  -webkit-transition: all .575s;
+  -moz-transition: all .575s;
+  -o-transition: all .575s;
+  transition: all .575s;
+}
+
+/* line 1645, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.tag-detail:hover .tag-title {
+  z-index: 3;
+  position: relative;
+}
+
+/* line 1651, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.half.mark {
+  background-size: 175px;
+  background-image: url(/assets/ps-mark-7ecad9c0dd3b5ee8653dd57acffe3c33.png);
+  background-repeat: no-repeat;
+  background-position: 0 20px;
+}
+
+/* line 1657, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.full-width {
+  width: 100%;
+  float: left;
+  font-size: 1.25em;
+  line-height: 1.35em;
+  padding: 10px 0;
+}
+
+/* line 1665, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.full-width a {
+  color: #fff;
+}
+
+/* line 1668, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul.footer-links {
+  padding-top: 25px;
+}
+
+/* line 1671, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul.footer-links li {
+  font-size: 1.35em;
+  line-height: 1.4em;
+  color: rgba(234, 228, 167, 0.5);
+}
+
+/* line 1676, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul.footer-links li span {
+  float: left;
+  width: 100%;
+}
+
+/* line 1680, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul.footer-links li#contact-info {
+  margin-top: 20px;
+}
+
+/* line 1684, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+ul.footer-links li a {
+  color: #e2da86;
+  text-decoration: none;
+}
+
+/* line 1691, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+#errorpage {
+  height: 100%;
+}
+
+/* line 1697, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+#map {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 800px;
+}
+
+/* line 1704, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.contact #map {
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+}
+
+/* line 1711, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.video-wrap {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  cursor: pointer;
+}
+
+/* line 1721, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.video-wrap.instagram {
+  padding-bottom: 100%;
+}
+
+/* line 1725, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.video-wrap .fa {
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 80px;
+  text-shadow: 0px 0px 4px black;
+}
+
+/* line 1736, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+.video-wrap embed,
+.video-wrap video,
+.video-wrap iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/*
+Media Queries
+***/
+@media (min-width: 1068px) {
+  /* line 1756, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .about p {
+    padding-right: 270px;
+  }
+
+  /* line 1759, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .header p {
+    padding: 0px 50px;
+  }
+
+  /* line 1762, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .half.mark {
+    background-size: 175px;
+    min-height: 250px;
+  }
+
+  /* line 1770, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .statement {
+    position: relative;
+    width: 100%;
+    height: 65px;
+    overflow: hidden;
+    background: #fff;
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  /* line 1783, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .home .links {
+    top: 25px;
+  }
+
+  /* line 1786, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .home nav.visible .links {
+    top: 10px;
+    -webkit-transition: top .575s;
+    -moz-transition: top .575s;
+    -o-transition: top .575s;
+    transition: top .575s;
+  }
+
+  /* line 1793, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .home nav.fixed-header.visible .links {
+    top: 0px;
+    -webkit-transition: top 0s;
+    -moz-transition: top 0s;
+    -o-transition: top 0s;
+    transition: top 0s;
+  }
+
+  /* line 1800, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .home nav {
+    left: 50%;
+    margin-left: -450px;
+  }
+
+  /* line 1804, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .home nav.fixed-header {
+    top: 0px !important;
+    left: 0px;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  /* line 1810, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .contact .main-promo .center,
+  .about .main-promo .center {
+    top: 50%;
+    margin-top: -150px;
+    z-index: 9;
+  }
+}
+@media (min-width: 1240px) {
+  /* line 1822, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .social-update.center.inner,
+  .team .center.inner {
+    min-width: 1200px;
+  }
+}
+@media (max-width: 2268px) {
+  /* line 1829, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .videos-list li {
+    height: 125px;
+  }
+
+  /* line 1832, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .videos-list li.feat_tag {
+    height: 250px;
+  }
+
+  /* line 1836, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .videos-list li .art-poster {
+    background-size: 450px !important;
+    background-position: 0px center !important;
+  }
+
+  /* line 1841, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .videos-list li.feat_tag.odd .art-poster {
+    background-position: right center !important;
+  }
+
+  /* line 1844, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .videos-list li.feat_tag.odd .title {
+    width: 450px;
+    right: 0px;
+  }
+
+  /* line 1848, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .videos-list li.basic_tag.odd .art-poster {
+    background-position: left center !important;
+  }
+
+  /* line 1851, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .videos-list li.basic_tag.even .art-poster {
+    background-position: right center !important;
+  }
+
+  /* line 1854, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .videos-list li.basic_tag.even .title {
+    width: 450px;
+    right: 0px;
+    left: auto;
+  }
+}
+@media (max-width: 1240px) {
+  /* line 1863, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .center.inner {
+    width: 900px;
+  }
+
+  /* line 1866, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .work nav.fixed-header,
+  .home nav.fixed-header {
+    top: 0px;
+    position: fixed;
+  }
+
+  /* line 1871, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .videos-list li {
+    width: 50%;
+  }
+
+  /* line 1875, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .videos-list li.spacer-desktop {
+    display: none;
+  }
+
+  /* line 1878, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .videos-list li.spacer-mobile {
+    display: block;
+  }
+
+  /* line 1884, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  #watch .center {
+    width: 900px;
+  }
+
+  /* line 1887, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .video {
+    width: 900px;
+    height: 510px;
+    margin-left: -450px;
+    margin-top: -260px;
+  }
+
+  /* line 1894, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .team ul li:first-child,
+  .team ul li {
+    width: 50%;
+  }
+
+  /* line 1898, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  ul.social-update li {
+    position: relative;
+    width: 50%;
+    float: left;
+  }
+
+  /* line 1903, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .main-promo {
+    width: auto;
+  }
+}
+@media (max-width: 1068px) {
+  /* line 1912, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .work nav,
+  .home nav {
+    left: 0px;
+    margin-left: 0px;
+  }
+
+  /* line 1917, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .center.inner {
+    width: auto;
+    margin: 0 auto;
+    max-width: 900px;
+  }
+
+  /* line 1922, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  #watch .center,
+  .video {
+    max-width: 900px;
+    width: auto;
+  }
+
+  /* line 1928, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .watching .content#watch,
+  .watching .content#watch {
+    min-height: 200px;
+    padding-top: 120px;
+    max-height: 700px;
+  }
+
+  /* line 1936, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .video {
+    width: 700px;
+    left: 50%;
+    position: relative;
+    padding-bottom: 39%;
+    height: auto;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: -350px;
+  }
+
+  /* line 1948, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .content.full {
+    background-size: 100% !important;
+  }
+}
+@media (max-width: 928px) {
+  /* line 1956, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .center.inner {
+    width: 90%;
+    margin: 0 5%;
+    min-width: 200px;
+    padding: 0;
+  }
+
+  /* line 1962, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .video {
+    width: 700px;
+    left: 50%;
+    position: relative;
+    padding-bottom: 39%;
+    height: auto;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: -350px;
+  }
+
+  /* line 1972, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .videos-list li .title,
+  .videos-list li.odd .title {
+    width: 100%;
+    left: 0px;
+  }
+
+  /* line 1979, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .videos-list li.basic_tag.even .title {
+    width: 100%;
+    right: auto;
+    left: 0px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 1990, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .watching .content#watch,
+  .watching .content#watch {
+    min-height: 200px;
+    padding-top: 120px;
+    max-height: 500px;
+  }
+
+  /* line 1998, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  nav .links {
+    display: block;
+  }
+
+  /* line 2001, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  ul.social-update li {
+    width: 100%;
+  }
+
+  /* line 2005, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .team ul li:first-child,
+  .team ul li {
+    width: 100%;
+  }
+
+  /* line 2010, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  p {
+    font-weight: 700;
+    font-size: 1.25em;
+  }
+
+  /* line 2015, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .interior nav, nav.fixed-header, nav {
+    width: 100%;
+    left: 0px;
+  }
+
+  /* line 2019, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .home nav {
+    width: 100%;
+    left: 0px !important;
+    height: 75px;
+    top: 0px !important;
+    background: #fff;
+  }
+
+  /* line 2027, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .home nav .logo {
+    display: none;
+  }
+
+  /* line 2030, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .home nav .prompt {
+    left: 0px;
+  }
+
+  /* line 2033, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .home .links {
+    top: 0px !important;
+    width: auto;
+  }
+
+  /* line 2037, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .work nav {
+    left: 0px !important;
+    width: 100%;
+  }
+
+  /* line 2041, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .work nav.fixed-header {
+    height: 75px;
+    left: 5% !important;
+    width: 90%;
+  }
+
+  /* line 2046, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  nav .links, nav:hover .links, .interior nav .links, .interior nav:hover .links, nav.fixed-header .links, nav.fixed-header:hover .links {
+    padding-top: 25px;
+    left: auto !important;
+    top: 0px;
+    position: relative;
+    float: right;
+    width: auto;
+    margin-left: 80px;
+  }
+
+  /* line 2055, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  #watch .center h4 {
+    padding: 0;
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* line 2065, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .watch-video {
+    width: 100px;
+    height: 100px;
+    background: #111;
+    border-radius: 50%;
+    z-index: 2;
+    text-align: left;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -100px;
+    margin-left: -50px;
+    box-sizing: border-box;
+  }
+
+  /* line 2079, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  span.buttonarea {
+    top: 42%;
+    font-size: 1em;
+  }
+
+  /* line 2084, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .center.inner {
+    width: auto;
+    margin: 0 auto;
+    max-width: 900px;
+    min-width: 200px;
+    padding: 0 5%;
+  }
+
+  /* line 2092, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .videos-list li .title h3 {
+    left: 5%;
+  }
+
+  /* line 2096, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  #watch.main-promo .header.tall {
+    height: 175px;
+  }
+
+  /* line 2100, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .main-promo {
+    min-height: 450px;
+  }
+
+  /* line 2104, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .home .main-promo .center {
+    height: 100px;
+  }
+
+  /* line 2107, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .main-promo .header h2 a,
+  .main-promo .header h2 span {
+    float: left;
+    display: block;
+  }
+
+  /* line 2113, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .work nav.fixed-header, .home nav.fixed-header, .interior nav.fixed-header {
+    top: -75px;
+  }
+
+  /* line 2116, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .home nav.fixed-header {
+    top: 0px !important;
+  }
+
+  /* line 2119, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .half {
+    width: 100%;
+  }
+
+  /* line 2122, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .video {
+    max-width: 900px;
+    width: 500px;
+    left: 50%;
+    position: relative;
+    padding-bottom: 37%;
+    height: auto;
+    top: 50%;
+    margin-top: -150px;
+    margin-left: -250px;
+  }
+
+  /* line 2133, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  ul.social-update li.video-social {
+    display: none;
+  }
+
+  /* line 2141, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .contact .main-promo .center,
+  .about .main-promo .center {
+    margin-top: 20px;
+  }
+
+  /* line 2145, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .contact .main-promo .center h1,
+  .about .main-promo .center h1 {
+    font-size: 1.65em;
+  }
+}
+@media (max-width: 568px) {
+  /* line 2156, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .videos-list li {
+    width: 100%;
+  }
+
+  /* line 2159, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .videos-list li .art-poster {
+    background-position: 200% center !important;
+  }
+
+  /* line 2162, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .content.full {
+    background-size: 900px !important;
+    background-position: center 0;
+  }
+
+  /* line 2167, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .videos-list li .title h3 {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /* line 2171, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .videos-list li .overlay {
+    background: rgba(0, 0, 0, 0.4);
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /* line 2177, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  nav .links li#social {
+    display: none;
+  }
+
+  /* line 2180, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  nav .links a, nav.fixed-header .links a {
+    font-size: .8em;
+  }
+
+  /* line 2184, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .about #map {
+    display: none;
+  }
+
+  /* line 2188, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .video {
+    width: 400px;
+    left: 50%;
+    position: relative;
+    padding-bottom: 55%;
+    height: auto;
+    top: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+  }
+}
+@media (max-width: 380px) {
+  /* line 2204, /home/eleven00/pictureshowfilms/vimeo/app/assets/stylesheets/application.scss.erb */
+  .video {
+    width: 300px;
+    left: 50%;
+    position: relative;
+    padding-bottom: 55%;
+    height: auto;
+    top: 50%;
+    margin-top: -170px;
+    margin-left: -150px;
+  }
+}

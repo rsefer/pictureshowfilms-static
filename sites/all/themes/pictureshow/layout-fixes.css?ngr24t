@@ -1,0 +1,54 @@
+.Explorer.ver_8 .our-work .node-project:hover .group-overlay,
+.Explorer.ver_8 .view-mode-teaser:hover .group-overlay,
+.Explorer.ver_8 .view-mode-home_page_teaser:hover .group-overlay,
+.Explorer.ver_8 .view-mode-teaser.active-video .group-overlay,
+.Explorer.ver_8 .view-mode-home_page_teaser.active-video .group-overlay,
+body.node-type-project.Explorer.ver_8 .view-mode-full .field-name-field-videos .field-item:hover .video-embed-description { 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c000000', endColorstr='#8c000000',GradientType=0 ) progid:alpha(opacity=100) 
+}
+
+.Explorer.ver_8 .view-mode-home_page_featured .group-overlay,
+.Explorer.ver_8 #user-login-page-wrapper,
+.Explorer.ver_8 #user-forgot-password-page-wrapper { 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c000000', endColorstr='#8c000000',GradientType=0 )
+}
+
+.Firefox .form-text { padding: 1px 10px 1px 12px }
+
+.Explorer #user-login-page .form-submit {
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+.Firefox #block-block-user-login .login-button span.menu-description { margin-top: -1px }
+
+.Firefox #user-login-page form #edit-actions,
+.Explorer #user-login-page form #edit-actions { margin-top: 29px }
+
+.Explorer form #edit-actions {
+    position: relative;
+    top: 3px;
+}
+
+.Firefox input:invalid,
+.Firefox textarea:invalid,
+.Firefox .form-item input.error,
+.Firefox .form-item textarea.error,
+.Firefox .form-item select.error {
+    padding-right: 9px;
+    padding-left: 11px;
+}
+
+
+.Firefox.email-us form #webform-component-right-column textarea,
+.Explorer.email-us form #webform-component-right-column textarea{
+    height: 88px;
+    min-height: 88px;
+    max-height: 88px;
+}
+
+.Explorer #user-login-page form #edit-actions, 
+.Explorer #user-forgot-password-page form #edit-actions {
+margin-top: 26px;
+margin-left: 5px;
+}

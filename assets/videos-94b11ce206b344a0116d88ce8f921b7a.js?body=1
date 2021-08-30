@@ -1,0 +1,16 @@
+jQuery(document).ready(function($) {
+  $('.fa.fa-play').click(function() {
+  	$(this).parent().find('video').trigger('click');
+  });
+
+  $('video').click(function() {
+  	var thisPlayButton = $(this).parent().find('i.fa');
+  	if ($(this).get(0).paused) {
+  		$(this).get(0).play();
+  		thisPlayButton.hide();
+  	} else {
+  		$(this).get(0).pause();
+  		thisPlayButton.show();
+  	}
+  });
+});

@@ -1,0 +1,262 @@
+/*
+ * VARS
+ */
+var anchors = [];
+var currentAnchor = 0;
+var isOverIFrame = false;
+
+/*
+ * I'M READY...
+ * page is loaded do some stuff.
+ */
+jQuery(document).ready(function() {
+	setUpMenu();
+	activateAnchorNav();
+	if( jQuery("body").hasClass("front") ){ activateHomePageVideoNav(); }
+	activateDetailPageVideoNav();
+	addMiddleClassToAdditionalVideosList();
+	activateWelcomeBoxClose();
+	activateFooterSlideShow();
+	if(jQuery("body.Explorer").length > 0){ ieFixes(); }
+	
+	jQuery('#node-project-home-page-featured-group-overlay, div.player iframe').click(function() {
+		$('#node-project-home-page-featured-group-overlay').fadeOut('fast');
+	});
+});
+
+
+/*
+ * RUN THIS AFTER AN AJAX CALL
+ * ajax is complete do some stuff.
+ */
+jQuery(document).ajaxComplete(function() {
+	activateAnchorNav();
+});
+
+
+/*
+ * ACTIVATES THE FOOTER QUOTE CYCLE.
+ */
+function activateFooterSlideShow(){
+	jQuery('.footer-quote').cycle({ fx: 'fade', random:true, speed:2000, timeout:0 }); 
+}
+
+/*
+ * ACTIVATES WELCOME CLOSE BUTTON.
+ * Allows user to close the welcome text when visiting their profile page.
+ * Sets a session cookie as well, to keep the box invisible if closed.
+ */
+function activateWelcomeBoxClose(){
+	if( jQuery.cookie("welcomescreen") == null ){ jQuery.cookie("welcomescreen", 0, { path:"/" }); }
+
+	if( jQuery.cookie("welcomescreen") == 1 ){
+		jQuery(".group-welcome-message").hide(0.1);
+	}else{
+		jQuery("#welcome-box-close-button").click(function(){ 
+			jQuery(".group-welcome-message").slideUp("fast");
+			jQuery.cookie("welcomescreen", 1, { path:"/" });
+		});
+	}
+}
+
+/*
+ * ADDS MIDDLE-ITEM CLASS
+ * Adding a middle-item class to additions vids list for styling.
+ */
+function addMiddleClassToAdditionalVideosList(){
+	jQuery(".node-project .field-name-field-videos .field-items .field-item:nth-child(3n+2)").addClass("middle-item");
+}
+
+/*
+ * RUN IE FIXES
+ * Yeah, IE IS LAME, so we bend it to our will.
+ */
+function ieFixes(){
+	jQuery("body.Explorer .view-content .node-project").each(function(){
+		jQuery(".field-name-field-featured-video a", this).append(jQuery(".group_overlay", this));
+	});
+	
+	jQuery("body.Explorer .field-name-field-videos .field-item").each(function(){
+		jQuery("a", this).append(jQuery(".video-embed-description", this));
+	});
+	
+	jQuery("body.Explorer .node-project.view-mode-featured .field-name-field-featured-video a").append( jQuery("body.Firefox .node-project.view-mode-featured .group_overlay") );
+	
+	jQuery("body.Explorer .node-project.view-mode-home_page_featured").mouseenter(function(){
+		jQuery(".group_overlay", this).fadeOut("fast");
+	}).mouseleave(function(){
+		jQuery(".group_overlay", this).fadeIn("fast");
+	});
+	
+}
+
+/*
+ * RUN MENU SETUP
+ * Move Menu item Descriptions back into the actual link.
+ */
+function setUpMenu(){
+	jQuery(".menu-description").each(function(index) {
+	    jQuery(this).siblings("a").append(this);
+	});	
+}
+
+/*
+ * ACTIVATE THE ANCHOR NAVIGATION
+ * Activate the interactivty for the anchor navigation.
+ */
+function activateAnchorNav(){	
+	// run through the page content and generate a list of anchors.
+	anchors = jQuery("#content [id], #content .extras-row, .our-work-row:nth-child(1), .our-work-row:nth-child(3n-1), .views-view-grid tr, ul.pager-load-more")
+					.not('[id="back-button"], [id="block-system-main"], [id="home-page-view-intro"], .field-slideshow-wrapper, .field-slideshow-controls, #welcome-box-close-button')
+					.map(function() { return this; })
+					.get();
+	
+	//NEXT - PREVIOUS SCROLL ACTIONS
+	jQuery("#prev-anchor").click(function(e){
+		e.preventDefault();
+		currentAnchor = checkAnchors(currentAnchor - 1);
+		if (jQuery('body').hasClass('extras')) {
+			jQuery('html, body').stop().animate({
+				scrollTop: jQuery(window).scrollTop() - jQuery(window).height() / 2
+			});
+		} else {
+			animateTo(currentAnchor);
+		}
+		
+	});	
+	
+	jQuery("#next-anchor").click(function(e){
+		e.preventDefault();
+		currentAnchor = checkAnchors(currentAnchor + 1);
+		if (jQuery('body').hasClass('extras')) {
+			jQuery('html, body').stop().animate({
+				scrollTop: jQuery(window).scrollTop() + jQuery(window).height() / 2
+			});
+		} else {
+			animateTo(currentAnchor);
+		}
+		
+	});
+		
+}
+
+/*
+ * PAGE ANIMATION SCROLL CALL
+ * This will scroll the page to the anchor location.
+ */
+function animateTo($item){
+	jQuery("html, body").stop().animate( { scrollTop: jQuery(anchors[$item]).offset().top - 100 }, 1000, "easeOutExpo");
+}
+
+/*
+ * CHECK ANCHOR UTILITY FUNCTION
+ * Runs a check if the newAnchor location is within the
+ * bounds of the anchors arrray and returns a value.
+ */
+function checkAnchors($newAnchor){
+	if($newAnchor > anchors.length - 1){
+		return 0;
+	}else if($newAnchor < 0){
+		return anchors.length - 1;
+	}else{
+		return $newAnchor;
+	}
+}
+
+/*
+ * ACTIVATES THE HOME PAGE VIDEO NAV
+ * This will allow users to click on thumbs and load videos.
+ */
+function activateHomePageVideoNav(){
+	
+	jQuery(".node.view-mode-home_page_teaser").each(function(index) {
+		var href = jQuery(".field-type-video-embed-field a" , this).attr("href");
+		// add about attribute
+		var about = getVimeoID( href );		
+		jQuery(this).attr("data-vimeo-id", about);
+		
+		jQuery(".field-type-video-embed-field a", this).attr("href", "javascript:swapVimeoFrameSource('" + href + "','" + about + "','true');");
+	});
+	
+	var vimeoID = getVimeoID( jQuery(".node.view-mode-home_page_featured iframe").attr('src') ); 
+	jQuery(".node.view-mode-home_page_featured").attr('data-vimeo-id', vimeoID );
+	jQuery(".node.view-mode-home_page_teaser[data-vimeo-id='" + vimeoID + "']").addClass("active-video");
+	
+	jQuery(".node.view-mode-home_page_featured iframe").mouseover(function(){
+		processMouseOver();
+	}).mouseout(function(){
+		processMouseOut();
+	});
+	
+    if (typeof window.attachEvent != 'undefined') {
+        top.attachEvent('onblur', processIFrameClick);
+    } else if (typeof window.addEventListener != 'undefined') {
+        top.addEventListener('blur', processIFrameClick, false);
+    }
+
+}
+/*
+ * Utility Functions to handle the clicking on an IFRAME.
+ */
+function processMouseOut() { isOverIFrame = false; top.focus(); }
+function processMouseOver() { isOverIFrame = true; }
+function processIFrameClick() {
+	if(isOverIFrame) {
+		jQuery("#node-project-home-page-featured-group-overlay").fadeOut("fast");
+		// Mark the current video: 
+		var target = jQuery(".node.view-mode-home_page_featured").attr("data-vimeo-id");
+		jQuery(".node.view-mode-home_page_teaser[data-vimeo-id='" + target + "']").addClass("active-video");
+		
+	}
+}
+
+/*
+ * ACTIVATES THE DETAIL PAGE VIDEO NAV (if needed)
+ * This will allow users to click on thumbs and load videos.
+ */
+function activateDetailPageVideoNav(){
+	
+	jQuery(".field-name-field-videos .field-item").each(function(index) {
+		
+		jQuery("a", this).append(jQuery(".video-embed-description", this));
+		
+		var href = jQuery("a" , this).attr("href");
+		var id = getVimeoID(href);
+		jQuery("a", this).attr("id", id ).attr("href", "javascript:swapVimeoFrameSource('" + href + "','" + id + "','false');");
+	});
+
+}
+
+/*
+ * SWAP FUNCTION TO CHANGE THE SOURCE OF A VIMEO IFRAME
+ * This will allow users to click on thumbs and load videos.
+ */
+function swapVimeoFrameSource($url, $target, $node){
+	
+	jQuery(".node, a").removeClass("active-video");
+	
+	// kill the event listener once a video is played.
+	if (typeof window.detachEvent != 'undefined') {
+        top.detachEvent('onblur', processIFrameClick);
+    } else if (typeof window.removeEventListener != 'undefined') {
+        top.removeEventListener('blur', processIFrameClick, false);
+    }
+
+	if($node == "true"){
+		jQuery('#node-project-home-page-featured-group-overlay').fadeOut('fast');
+		jQuery(".node[data-vimeo-id='" + $target + "']").addClass("active-video");
+	}else{
+		jQuery("a#" + $target + "").addClass("active-video");
+	}	
+	jQuery(".group-welcome-message").slideUp("fast");
+	jQuery("div.player iframe").attr("src", "//player.vimeo.com/video/" + getVimeoID($url) + "?width=676px&height=380px&color=ff9933&portrait=0&title=0&byline=0&autoplay=1&loop=0");
+
+}
+
+/*
+ * Utiltiy function to get a VIMEO video ID.
+ */
+function getVimeoID($url){
+	var vid = $url.split("/");	
+	return vid[vid.length - 1].split("?")[0];
+}
